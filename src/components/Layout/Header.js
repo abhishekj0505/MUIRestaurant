@@ -15,10 +15,12 @@ import { NavLink } from "react-router-dom";
 import "../../styles/HeaderStyles.css";
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
+
   // hndle menu click
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
+  
   //menu drawer
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
